@@ -17,7 +17,7 @@
 <body>
 
     <ul id="slide-out" class="sidenav">
-        <li><a class="sidenav-close" href="#header"><i class="material-icons" >home</i>Главная</a></li>
+        <li><a class="sidenav-close" href="#header"><i class="material-icons">home</i>Главная</a></li>
         <li><a class="sidenav-close" href="#progect"><i class="material-icons">people</i>О нас</a></li>
         <li><a class="sidenav-close" href="#services"><i class="material-icons">grade</i>Услуги</a></li>
         <li><a class="sidenav-close" href="#contacts"><i class="material-icons">phone</i>Контакты</a></li>
@@ -98,6 +98,20 @@
             </div>
         </div>
     </section>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Заголовок окна</h4>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Запятой, дал страна
+                ipsum пунктуация коварный семантика точках, lorem рыбного вопроса свое своих переписывается дороге
+                скатился толку раз. Щеке снова свой буквоград текстов послушавшись пустился. Ipsum продолжил они взгляд
+                великий, по всей решила не букв инициал назад, он имени домах имеет прямо предупреждал даль она своего
+                гор рекламных правилами предупредила напоивший! Lorem вершину пустился рыбными пояс имени, первую одна
+                пор напоивший, образ власти не единственное. Осталось, жаренные за! Правилами напоивший пустился страна
+                пор? Жизни текста правилами это деревни реторический даже напоивший. Предупреждал одна образ ведущими
+                грамматики диких. Заголовок страну она но.</p>
+        </div>
+    </div>
     <section class="request">
         <div class="container">
             <div class="request__flex">
@@ -106,10 +120,10 @@
                     <h5 class="request__h5">Реализуем самые смелые решения в России!</h5>
                 </div>
                 <div class="request__flex-right">
-                    <button class="request__btn">
+                    <a class="request__btn modal-trigger" href="#modal1">
                         <img src="img/envelope.svg" alt="Envelope" class="request__icon">
                         Ваш запрос
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -275,6 +289,17 @@
             </div>
         </div>
     </section>
+
+     <!-- Modal Structure -->
+     <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Заголовок окна</h4>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Запятой, дал страна
+                ipsum пунктуация коварный семантика точках, lorem рыбного вопроса свое своих переписывается дороге
+                скатился толку раз. Щеке снова свой буквоград текстов послушавшись пустился.</p>
+        </div>
+    </div>
+
     <section class="request">
         <div class="container">
             <div class="request__flex">
@@ -283,10 +308,10 @@
                     <h5 class="request__h5">Оставте заявку и мы свяжемся с вами!</h5>
                 </div>
                 <div class="request__flex-right">
-                    <button class="request__btn">
+                    <a class="request__btn modal-trigger" href="#modal2">
                         <img src="img/envelope.svg" alt="Envelope" class="request__icon">
                         Ваш запрос
-                    </button>
+                    </a>
                 </div>
             </div>
 
