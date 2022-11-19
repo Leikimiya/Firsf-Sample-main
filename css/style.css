@@ -468,6 +468,9 @@ body {
     color: var(--accent-color);
     margin-bottom: 23px;
 }
+.question-item :hover{
+    cursor: pointer;
+}
 
 .question__p {
     margin-bottom: 40px;
