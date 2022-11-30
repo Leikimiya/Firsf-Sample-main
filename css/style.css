@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    scroll-behavior: smooth
 }
 
 img {
@@ -438,10 +439,6 @@ body {
     gap: 0;
 }
 
-.portfolio__grid-item {}
-
-.portfolio__img {}
-
 @media screen and (max-width:1280px) {
     .portfolio__grid {
         grid-template-columns: repeat(2, 1fr);
@@ -468,7 +465,8 @@ body {
     color: var(--accent-color);
     margin-bottom: 23px;
 }
-.question-item :hover{
+
+.question__h3>span:hover {
     cursor: pointer;
 }
 
@@ -1001,13 +999,16 @@ ul#slide-out:not(.browser-default)>li {
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
 }
+
 /* Модальное окно */
 
-.z-depth-5, .modal {
+.z-depth-5,
+.modal {
     -webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
-  }
-  .modal {
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
     display: none;
     position: fixed;
     left: 0;
@@ -1020,44 +1021,50 @@ ul#slide-out:not(.browser-default)>li {
     overflow-y: auto;
     border-radius: 2px;
     will-change: top, opacity;
-  }
-  
-  .modal:focus {
+}
+
+.modal:focus {
     outline: none;
-  }
-  
-  @media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 992px) {
     .modal {
-      width: 80%;
+        width: 80%;
     }
-  }
-  
-  .modal h1, .modal h2, .modal h3, .modal h4 {
+}
+
+.modal h1,
+.modal h2,
+.modal h3,
+.modal h4 {
     margin-top: 0;
-  }
-  
-  .modal .modal-content {
+}
+
+.modal .modal-content {
     padding: 24px;
-  }
-  
-  .modal .modal-close {
+}
+
+.modal .modal-close {
     cursor: pointer;
-  }
-  
-  .modal .modal-footer {
+}
+
+.modal .modal-footer {
     border-radius: 0 0 2px 2px;
     background-color: #fafafa;
     padding: 4px 6px;
     height: 56px;
     width: 100%;
     text-align: right;
-  }
-  
-  .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-small, .modal .modal-footer .btn-flat {
+}
+
+.modal .modal-footer .btn,
+.modal .modal-footer .btn-large,
+.modal .modal-footer .btn-small,
+.modal .modal-footer .btn-flat {
     margin: 6px 0;
-  }
-  
-  .modal-overlay {
+}
+
+.modal-overlay {
     position: fixed;
     z-index: 999;
     top: -25%;
@@ -1069,28 +1076,28 @@ ul#slide-out:not(.browser-default)>li {
     background: #000;
     display: none;
     will-change: opacity;
-  }
-  
-  .modal.modal-fixed-footer {
+}
+
+.modal.modal-fixed-footer {
     padding: 0;
     height: 70%;
-  }
-  
-  .modal.modal-fixed-footer .modal-content {
+}
+
+.modal.modal-fixed-footer .modal-content {
     position: absolute;
     height: calc(100% - 56px);
     max-height: 100%;
     width: 100%;
     overflow-y: auto;
-  }
-  
-  .modal.modal-fixed-footer .modal-footer {
+}
+
+.modal.modal-fixed-footer .modal-footer {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
     bottom: 0;
-  }
-  
-  .modal.bottom-sheet {
+}
+
+.modal.bottom-sheet {
     top: auto;
     bottom: -100%;
     margin: 0;
@@ -1098,9 +1105,9 @@ ul#slide-out:not(.browser-default)>li {
     max-height: 45%;
     border-radius: 0;
     will-change: bottom, opacity;
-  }
+}
 
-  .materialboxed {
+.materialboxed {
     display: block;
     cursor: -webkit-zoom-in;
     cursor: zoom-in;
@@ -1108,17 +1115,18 @@ ul#slide-out:not(.browser-default)>li {
     -webkit-transition: opacity .4s;
     transition: opacity .4s;
     -webkit-backface-visibility: hidden;
-  }
-  
-  .materialboxed:hover:not(.active) {
+}
+
+.materialboxed:hover:not(.active) {
     opacity: .8;
-  }
-  
-  .materialboxed.active {
+}
+
+.materialboxed.active {
     cursor: -webkit-zoom-out;
     cursor: zoom-out;
-  }
-  #materialbox-overlay {
+}
+
+#materialbox-overlay {
     position: fixed;
     top: 0;
     right: 0;
@@ -1127,9 +1135,9 @@ ul#slide-out:not(.browser-default)>li {
     background-color: #292929;
     z-index: 1000;
     will-change: opacity;
-  }
-  
-  .materialbox-caption {
+}
+
+.materialbox-caption {
     position: fixed;
     display: none;
     color: #fff;
@@ -1142,4 +1150,4 @@ ul#slide-out:not(.browser-default)>li {
     height: 50px;
     z-index: 1000;
     -webkit-font-smoothing: antialiased;
-  }
+}
